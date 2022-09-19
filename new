@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Run the setup script if the template file does not exist.
+if [ ! -f ~/CODE/BASH/.blank ]; then
+  sh setup
+fi
+
+echo ' '
+echo '  What is the name of this new script?'
+echo ' '
+read NAME
+cp ~/CODE/BASH/.blank $NAME
+nano $NAME

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Run all update commands at once and consent to all prompts.
+sudo apt -y update
+sudo apt -y upgrade
+sudo apt -y dist-upgrade
+sudo apt -y autoremove

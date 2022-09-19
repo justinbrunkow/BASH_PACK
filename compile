@@ -1,0 +1,12 @@
+#!/bin/bash
+
+cd ~/CODE/BASH
+for SCRIPT in $(ls);
+do
+  echo "alias $SCRIPT='sh ~/CODE/BASH/$SCRIPT'";
+done > ~/.bash_aliases
+echo 'cat ~/.bash_aliases'
+cat ~/.bash_aliases
+echo ' '
+echo '  Run ". ~/.bash_aliases" or restart terminal to load new aliases.'
+echo ' '
